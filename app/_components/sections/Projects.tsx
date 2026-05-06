@@ -76,7 +76,7 @@ const projects = [
       "Live flow preview & validation",
       "JSON export for bot engine",
     ],
-    github: "https://github.com/prayagsonagra",
+    github: "#",
     demo: "#",
     size: "medium",
     gradient: "from-[#22d3ee]/20 via-[#22d3ee]/05 to-transparent",
@@ -135,14 +135,14 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
                 <GitBranch className="w-3.5 h-3.5 text-text-secondary" />
               </a>
             )}
-            <a
+            {/* <a
               href={project.demo}
               aria-label={`${project.title} demo`}
               className="w-8 h-8 rounded-lg flex items-center justify-center bg-bg-elevated hover:bg-bg-overlay transition-colors"
               onClick={(e) => e.stopPropagation()}
             >
               <ExternalLink className="w-3.5 h-3.5 text-text-secondary" />
-            </a>
+            </a> */}
           </div>
         </div>
 
