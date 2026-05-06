@@ -104,7 +104,6 @@ const BOOT: Array<{ isCmd: boolean; text: string }> = [
   { isCmd: false, text: "" },
   { isCmd: true, text: "whoami" },
   { isCmd: false, text: "" },
-  { isCmd: true, text: "help" },
 ];
 
 const PROMPT = "prayag@dev:~$";
