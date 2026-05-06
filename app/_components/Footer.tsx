@@ -3,7 +3,7 @@ import { GitBranch, Link2, Mail, Zap, Heart } from "lucide-react";
 const socials = [
   { icon: GitBranch, href: "https://github.com/prayagsonagra", label: "GitHub" },
   { icon: Link2, href: "https://linkedin.com/in/prayagsonagra", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:prayag@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:sonagraprayag2@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {

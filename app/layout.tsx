@@ -30,6 +30,13 @@ export const metadata: Metadata = {
     "Visual Builder",
   ],
   authors: [{ name: "Prayag Sonagra" }],
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/favicon.png",
+    shortcut: "/favicon.png",
+  },
   openGraph: {
     title: "Prayag Sonagra — Full Stack Engineer",
     description:

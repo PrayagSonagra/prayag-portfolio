@@ -15,9 +15,8 @@ const experiences = [
     location: "Ahmedabad, India",
     color: "var(--accent-cyan)",
     highlights: [
-      "Graduated with focus on software engineering & distributed systems",
-      "Led college tech fest web team — built and managed the event platform",
-      "Final year project: Real-time collaborative whiteboard using WebSockets",
+      "Graduated with focus on software engineering",
+      "Final year project: Real-time cryptocurrency market tracker with live watchlist",
     ],
     tags: ["JavaScript", "React", "Next.js", "Node.js", "MongoDB", "TailwindCSS"],
   },
@@ -51,7 +50,6 @@ const experiences = [
       "Engineered a real-time messaging layer with Socket.io, handling 10k+ concurrent WebSocket connections.",
       "Developed a visual automation engine using a trigger-condition-action model for complex message workflows.",
       "Integrated multi-channel communication via WhatsApp Business AP",
-      "Optimized MongoDB aggregation pipelines and indexing strategies, reducing p95 API response times by 85%."
     ],
     tags: ["React", "Node.js", "Socket.io", "MongoDB", "WhatsApp API", "TypeScript", "Redux Toolkit"],
   },

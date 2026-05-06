@@ -36,20 +36,22 @@ const projects = [
   {
     id: "voca",
     title: "Voca",
-    subtitle: "AI-Powered PDF Library",
+    subtitle: "AI-Powered PDF & Voice Intelligence",
     description:
-      "Upload PDFs and hold deep, contextual AI conversations using a full RAG pipeline — powered by OpenAI embeddings and vector similarity search.",
+      "An intelligent library where you can chat with your PDFs or interact via real-time voice—powered by a custom RAG pipeline and Vapi AI integration.",
     longDesc:
-      "Voca transforms static documents into interactive knowledge bases. Each PDF is chunked, embedded with OpenAI's text-embedding models, and stored in a vector database.",
+      "Voca transforms static documents into interactive knowledge bases. Using MongoDB for data persistence and Vercel Blob for secure storage, it processes PDFs to enable contextual AI conversations and hands-free voice interactions.",
     icon: Brain,
     accentColor: "var(--accent-primary)",
     glowColor: "rgba(124,92,252,0.3)",
-    tags: ["Next.js", "OpenAI", "RAG", "Pinecone", "TypeScript", "Prisma"],
+    // Updated tags to match your actual dependencies
+    tags: ["Next.js", "MongoDB", "Vapi AI", "OpenAI", "Vercel Blob", "Clerk"],
     features: [
-      "Full RAG pipeline with semantic chunking",
-      "Interactive AI conversation per document",
-      "Multi-document knowledge base",
-      "Citation-grounded responses",
+      "Real-time voice interaction via Vapi AI integration",
+      "RAG pipeline with semantic PDF processing",
+      "Secure document storage with Vercel Blob",
+      "Authentication & User Management via Clerk",
+      "Responsive UI built with Tailwind CSS 4 & Shadcn",
     ],
     github: "https://github.com/prayagsonagra",
     demo: "#",

@@ -100,7 +100,7 @@ function InputField({
 }
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "prayag@example.com", href: "mailto:prayag@example.com" },
+  { icon: Mail, label: "Email", value: "sonagraprayag2@gmail.com", href: "mailto:sonagraprayag2@gmail.com" },
   { icon: GitBranch, label: "GitHub", value: "github.com/prayagsonagra", href: "https://github.com/prayagsonagra" },
   { icon: Link2, label: "LinkedIn", value: "linkedin.com/in/prayagsonagra", href: "https://linkedin.com/in/prayagsonagra" },
   { icon: MapPin, label: "Location", value: "Ahmedabad, India", href: null },
@@ -146,9 +146,18 @@ export default function Contact() {
       return;
     }
     setFormState("sending");
-    // Simulate network delay
-    await new Promise((r) => setTimeout(r, 2000));
-    setFormState("success");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error(`status ${res.status}`);
+      setFormState("success");
+    } catch (err) {
+      console.error("[contact form]", err);
+      setFormState("error");
+    }
   };
 
   const handleReset = () => {
@@ -346,6 +355,30 @@ export default function Contact() {
                         </>
                       )}
                     </motion.button>
+
+                    {/* Delivery channel badges */}
+                    <div className="flex items-center justify-center gap-3 pt-1">
+                      <span className="text-xs text-text-muted font-mono">delivered via</span>
+                      {/* Gmail */}
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-bg-elevated border border-border-subtle text-xs font-medium text-text-secondary">
+                        <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" fill="#EA4335" fillOpacity=".15" stroke="#EA4335" strokeWidth="1.2"/>
+                          <path d="M2 6l10 7 10-7" stroke="#EA4335" strokeWidth="1.5" strokeLinecap="round"/>
+                        </svg>
+                        Gmail
+                      </span>
+                      <span className="text-border-subtle">·</span>
+                      {/* Slack */}
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-bg-elevated border border-border-subtle text-xs font-medium text-text-secondary">
+                        <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="2" y="2" width="8" height="8" rx="2" fill="#E01E5A" fillOpacity=".85"/>
+                          <rect x="14" y="2" width="8" height="8" rx="2" fill="#36C5F0" fillOpacity=".85"/>
+                          <rect x="2" y="14" width="8" height="8" rx="2" fill="#2EB67D" fillOpacity=".85"/>
+                          <rect x="14" y="14" width="8" height="8" rx="2" fill="#ECB22E" fillOpacity=".85"/>
+                        </svg>
+                        Slack
+                      </span>
+                    </div>
                   </motion.form>
                 )}
               </AnimatePresence>

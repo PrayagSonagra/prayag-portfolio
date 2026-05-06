@@ -4,7 +4,7 @@ import Hero from "./_components/sections/Hero";
 import Experience from "./_components/sections/Experience";
 import Projects from "./_components/sections/Projects";
 import TechStack from "./_components/sections/TechStack";
-import LogicPlayground from "./_components/sections/LogicPlayground";
+import Terminal from "./_components/sections/Terminal";
 import Contact from "./_components/sections/Contact";
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
         <Experience />
         <Projects />
         <TechStack />
-        <LogicPlayground />
+        <Terminal />
         <Contact />
       </main>
       <Footer />

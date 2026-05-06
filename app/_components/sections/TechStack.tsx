@@ -40,12 +40,12 @@ const techStack = [
     color: "#47a248",
     svg: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4C20 4 12 14 12 22a8 8 0 0 0 16 0C28 14 20 4 20 4z" stroke="#47A248" stroke-width="2" fill="#47A248" fill-opacity="0.15"/><path d="M20 8v24" stroke="#47A248" stroke-width="2" stroke-linecap="round"/><path d="M20 30c1.5-2 4-4 4-8" stroke="#47A248" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>`,
   },
-  {
-    name: "Python",
-    category: "Language",
-    color: "#facc15",
-    svg: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 8c0-2.2 1.8-4 4-4h4c2.2 0 4 1.8 4 4v8H14V8z" fill="#3B82F6" fill-opacity="0.8"/><path d="M14 16h12v8H14z" fill="none" stroke="#FACC15" stroke-width="1.5"/><path d="M26 24c0 2.2-1.8 4-4 4h-4c-2.2 0-4-1.8-4-4v-8h12v8z" fill="#FACC15" fill-opacity="0.8"/><circle cx="17" cy="11" r="1.5" fill="white"/><circle cx="23" cy="29" r="1.5" fill="#1e3a5f"/></svg>`,
-  },
+  // {
+  //   name: "Python",
+  //   category: "Language",
+  //   color: "#facc15",
+  //   svg: `<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 8c0-2.2 1.8-4 4-4h4c2.2 0 4 1.8 4 4v8H14V8z" fill="#3B82F6" fill-opacity="0.8"/><path d="M14 16h12v8H14z" fill="none" stroke="#FACC15" stroke-width="1.5"/><path d="M26 24c0 2.2-1.8 4-4 4h-4c-2.2 0-4-1.8-4-4v-8h12v8z" fill="#FACC15" fill-opacity="0.8"/><circle cx="17" cy="11" r="1.5" fill="white"/><circle cx="23" cy="29" r="1.5" fill="#1e3a5f"/></svg>`,
+  // },
   {
     name: "Redux Toolkit",
     category: "State",

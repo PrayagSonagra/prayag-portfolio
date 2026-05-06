@@ -120,11 +120,14 @@ export default function Hero() {
           {/* Headline */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight mb-6"
+            className="flex flex-col items-center gap-1 mb-6"
           >
-            <span className="text-text-primary">Building</span>
-            <br />
-            <span className="gradient-text-shimmer">things that think.</span>
+            <span className="text-xl sm:text-2xl lg:text-3xl font-medium text-text-muted tracking-wide">
+              Building the logic
+            </span>
+            <span className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight gradient-text-shimmer">
+              behind the visual.
+            </span>
           </motion.h1>
 
           {/* Rotating subtitle */}
@@ -192,7 +195,7 @@ export default function Hero() {
             {[
               { icon: GitBranch, href: "https://github.com/prayagsonagra", label: "GitHub" },
               { icon: Link2, href: "https://linkedin.com/in/prayagsonagra", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:prayag@example.com", label: "Email" },
+              { icon: Mail, href: "mailto:sonagraprayag2@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}
@@ -217,7 +220,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Scroll indicator */}
-        <motion.div
+        {/* <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -233,7 +236,7 @@ export default function Hero() {
               transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
             />
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
